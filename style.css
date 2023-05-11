@@ -25,16 +25,20 @@ h1{
     text-align: center;
 }
 
-button{
+#start-button{
     background-color: green;
     width: 50%;
+}
+
+#reset-button{
+    background-color: blue;
 }
 
 #board{
     display: flex;
     justify-content: center;
     position: relative;
-    width: 610px;
+    width: 550px;
 
 }
 
@@ -49,14 +53,15 @@ button{
 #tiles{
     display: flex;
     flex-wrap: wrap;
-    gap: 1px;
+    gap: 5px;
 
 }
 
 .tile{
     border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;

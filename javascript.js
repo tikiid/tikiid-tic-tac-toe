@@ -8,6 +8,12 @@ let reset = document.querySelector("#reset-button");
 let cache = document.querySelector("#cache");
 let myBoard = [];
 
+const widthBoard =  document.getElementById("#tiles").clientWidth;
+
+cache.style.width = widthBoard;
+cache.style.height = widthBoard;
+
+
 var gameOver = false;
 let thePlayer = 'X';
 let turnCounter = 0;
@@ -148,7 +154,7 @@ for(let i = 0; i < tiles.length; i++){
         } else {
             alert("coup invalide");
         }
-        console.log(myBoard);
+        // console.log(myBoard);
     })
 }
 
